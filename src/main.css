@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Yanone+Kaffeesatz:wght@400;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    /* con esta transicion se mueve al cambiar */
+    transition: all .2 linear;
+    /* background-color: #24252a; */
+}
+
+body {
+    background-color: #24252a;
+}
+
+
+li,
+a,
+button {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1rem;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    /*justify-content: space-between;  para que queden todo al centro */
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252a;
+}
+
+
+.logo {
+    margin-right: auto;
+    /* para ponerle el flex end y que el logo se mueva a la izq */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* estilos para las barra de navegaciones */
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    /* los pone a cada lado */
+    padding: 0 20px;
+}
+
+.nav__links li a {
+    transition: all .3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: rgba(0, 136, 169, 1);
+}
+
+/* estilos para el boton de registro */
+
+.header .boton__registro button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+}
+
+.header .boton__registro button:hover {
+    background-color: rgba(28, 182, 221, 1);
+    transition: all .3s ease 0s;
+}
+
+
+/* estilo para la parte del hero */
+
+.hero{
+    display: flex;
+    justify-content: center;
+}
+
+.hero .carousel{
+    width: 90%;
+}
+
+.hero .carousel .carousel-item img{
+    border-radius: 10px;;
+}
+
+
+/* estilo para el main */
+
+
+.wrapper {
+    margin: auto;
+    width: 90%;
+    max-width: 100%;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.contenedor-conciertos {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+}
+
+.titulo {
+    font-size: 24px;
+    padding: 20px 0;
+}
+
+
+.card {
+    border-radius: 10px;
+    min-height: 200px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card .textos {
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar {
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 15px;
+    font-weight: bold;
+}
+
+.sidebar h3{
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .boton {
+    background: #046873;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+
+
+/* estilo para crear el footer */
+
+footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+footer .box-container .box h3 {
+    padding: .5rem 0;
+    color: rgb(29, 137, 137);
+    font-size: 1rem;
+}
+
+footer .box-container .box p {
+    color: azure;
+    font-size: .8rem;
+    padding: 0 0;
+}
+
+footer .box-container .box a {
+    display: block;
+    padding: 0 0;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+footer .box-container .box a:hover {
+    color: rgb(29, 137, 137);
+}
+
+footer .box-container .box .social {
+    display: inline;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+footer .credit {
+    text-align: center;
+    border-top: .1rem solid rgba(191, 191, 191, 0.446);
+    font-size: .8rem;
+    color: azure;
+    padding-top: 10px;
+}
